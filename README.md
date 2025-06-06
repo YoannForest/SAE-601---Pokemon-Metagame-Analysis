@@ -3,7 +3,7 @@
 <h2>For the App launching, a PostgreSQL base is needed </h2>
 
 <p> It's possible to use a docker container to setup the base : </p>
-<i>docker run -d -p 5432:5432 -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -v /absolute/path/to/data:/var/lib/postgresql/data postgres -c 'fsync=off' </i>
+<i>docker run -d -p 5432:5432 -e POSTGRES_PASSWORD=postgre -e POSTGRES_USER=postgres -v /absolute/path/to/data:/var/lib/postgresql/data postgres -c 'fsync=off' </i>
 <br>
 And after that, runnig the <i>scrap_pokemon_postgresql.py</i> will fill the database
 <br>
